@@ -90,7 +90,7 @@ http://localhost:3000
 
 #### Get User by ID
 - **GET** `/api/users/:id`
-- **Authentication:** Required
+- **Authentication:** Not Required
 - **Response (200):**
 ```json
 {
@@ -106,7 +106,7 @@ http://localhost:3000
 
 #### Get All Todos
 - **GET** `/api/todos`
-- **Authentication:** Required
+- **Authentication:** Not Required
 - **Response (200):**
 ```json
 {
@@ -155,7 +155,7 @@ http://localhost:3000
 
 #### Get Todo by ID
 - **GET** `/api/todos/:id`
-- **Authentication:** Required
+- **Authentication:** Not Required
 - **Response (200):**
 ```json
 {

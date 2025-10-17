@@ -4,10 +4,10 @@ const { getAllTodos, createTodo, getTodoById, updateTodo, deleteTodo, deleteAllT
 const { auth } = require('../middleware/auth');
 
 router.get('/', getAllTodos);
-router.post('/', createTodo);
+router.post('/', auth, createTodo);
 router.get('/:id', getTodoById);
-router.put('/:id', updateTodo);
-router.delete('/:id', deleteTodo);
-router.delete('/', deleteAllTodos);
+router.put('/:id', auth, updateTodo);
+router.delete('/:id', auth, deleteTodo);
+router.delete('/', auth, deleteAllTodos);
 
 module.exports = router;
